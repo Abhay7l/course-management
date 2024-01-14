@@ -13,8 +13,8 @@ const DashboardLayout = ({children}:{
         <div className="hidden md:flex h-full w-56 flex-col fixed inset-y-0 z-50">
             <Sidebar />
         </div>
-        {/* on md devices our sidebar has width 56 so we give children padd from left of 56 to make them visible */}
-        <main className="md:pl-56 h-full" >
+        {/* on md devices our sidebar has width 56 so we give children padd from left of 56 to make them visible and also navbar has ht 80 so give padding top 80px*/}
+        <main className="md:pl-56 pt-[80px] h-full" >
             {children}
         </main>
             
